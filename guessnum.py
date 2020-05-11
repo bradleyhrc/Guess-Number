@@ -1,9 +1,10 @@
-import random 
-from time import sleep 
+import random
+from time import sleep
+
 #Generate a random number from 1 to 10
 randomnumber = random.randint(1, 10)
 
-tries = 0 
+tries = 0
 
 name = input("Hello, what's your name? \n")
 
@@ -13,7 +14,7 @@ print("Ok {}, guess a number between 1 and 10. I'll give you three tries. :)".fo
 while tries < 3:
     tries += 1
     guess = int(input("Take a guess: "))
-    #If correct number 
+    #If correct number
     if guess == randomnumber:
         print("Congratulations! You guessed my number in {} tries, you win! \nThat was fun! Feel free to play again. :) ".format(tries))
         break
